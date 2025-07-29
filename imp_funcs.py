@@ -2,6 +2,7 @@ from itertools import product
 from sage.all import Compositions
 
 def weak_compositions(n, k):
+    """Generate all weak compositions of n into k parts."""
     padded_compositions = []
     for comp in Compositions(n):
         for padding in product(range(k - len(comp) + 1), repeat=len(comp) + 1):
