@@ -145,4 +145,4 @@ if __name__ == "__main__":
     print()
     
     print("Polynomial (formatted):")
-    print(format_polynomial(poly)) 
+    print(format_polynomial(poly))
